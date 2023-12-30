@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
+}
+.Compo1>input,.Compo1>select{
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    margin: 20px;
+    border-radius: 5px;
+    padding: 14px;
+}
+.Compo1>select{
+    margin-left: 40px;
+}
+.Compo1>input::placeholder{
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Compo1{
+    border: 1px solid black;
+    padding: 100px;
+    text-align: center; 
+    margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    border: none;
+    background-color: #0e0a4f;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+.Compo1>.btn:hover{
+    background-color: #5e56f3;
+    color: rgb(16, 5, 56);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Compo2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-
-.App-link {
-  color: #61dafb;
+.Compo2 > div img {
+    width: 200px;  
+    height: 150px;  
+    object-fit: cover;  
+    border-radius: 5px;
+     
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn1{
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    border: none;
+    background-color: #0e0a4f;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn1:hover{
+    background-color: #5e56f3;
+    color: rgb(16, 5, 56);
+}
+.Compo2 > div {
+    flex-basis: calc(20% - 20px);  
+    margin: 10px;
+    box-sizing: border-box;  
 }
